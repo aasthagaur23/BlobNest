@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlobNest Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+
+        <h2>BlobNest</h2>
+
+        <ul>
+            <li>Dashboard</li>
+            <li>Files</li>
+            <li>Favorites</li>
+            <li>Trash</li>
+            <li>Settings</li>
+        </ul>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="topbar">
+
+           <input type="text" id="searchInput" placeholder="Search by file name...">
+
+            <div class="profile">
+                Admin
+            </div>
+
+        </div>
+
+        <h1>Welcome to BlobNest</h1>
+<button id="logoutBtn">Logout</button>
+        <p>Manage and organize your cloud files from one place.</p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Files</h3>
+                <h2 id="totalFiles">24</h2>
+            </div>
+
+            <div class="card">
+                <h3>Storage Used</h3>
+                <h2>1.8 GB</h2>
+            </div>
+
+            <div class="card">
+                <h3>Favorites</h3>
+                <h2>6</h2>
+            </div>
+
+        </div>
+
+
+        <h2>Recent Files</h2>
+        <div class="actions">
+
+        <button id="uploadBtn">Upload File</button>
+
+<input type="file" id="fileInput" hidden>
+
+</div>
+        <table id="fileTable">
+
+            <tr>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Internship_Report.pdf</td>
+                <td>2 MB</td>
+                <td>PDF</td>
+            </tr>
+
+            <tr>
+                <td>Azure_Notes.pdf</td>
+                <td>20 MB</td>
+                <td>PDF</td>
+            </tr>
+
+            <tr>
+                <td>BlobNest_Presentation.pptx</td>
+                <td>8 MB</td>
+                <td>PPT</td>
+            </tr>
+
+            <tr>
+                <td>Project_Document.docx</td>
+                <td>5 MB</td>
+                <td>DOCX</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
