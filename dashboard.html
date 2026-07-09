@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,104 +17,131 @@
 
 <div class="dashboard">
 
-    <div class="sidebar">
+<div class="sidebar">
 
-        <h2>BlobNest</h2>
+<h2>☁ BlobNest</h2>
 
-        <ul>
-            <li>Dashboard</li>
-            <li>Files</li>
-            <li>Favorites</li>
-            <li>Trash</li>
-            <li>Settings</li>
-        </ul>
+<ul>
+<li>Dashboard</li>
+<li>My Files</li>
+<li>Favorites</li>
+<li>Trash</li>
+<li>Settings</li>
+</ul>
 
-    </div>
+</div>
 
 
-    <div class="main">
+<div class="main">
 
-        <div class="topbar">
+<div class="topbar">
 
-           <input type="text" id="searchInput" placeholder="Search by file name...">
+<input type="text" id="searchInput" placeholder="Search files...">
 
-            <div class="profile">
-                Admin
-            </div>
+<div class="profile">
+Admin
+</div>
 
-        </div>
+</div>
 
-        <h1>Welcome to BlobNest</h1>
+
+<div class="welcome">
+
+<div>
+<h1>Welcome to BlobNest</h1>
+<p>Manage and organize your cloud files easily.</p>
+</div>
+
 <button id="logoutBtn">Logout</button>
-        <p>Manage and organize your cloud files from one place.</p>
+
+</div>
 
 
-        <div class="cards">
 
-            <div class="card">
-                <h3>Total Files</h3>
-                <h2 id="totalFiles">24</h2>
-            </div>
+<div class="cards">
 
-            <div class="card">
-                <h3>Storage Used</h3>
-                <h2>1.8 GB</h2>
-            </div>
-
-            <div class="card">
-                <h3>Favorites</h3>
-                <h2>6</h2>
-            </div>
-
-        </div>
+<div class="card">
+<h3>Total Files</h3>
+<h2 id="totalFiles">4</h2>
+</div>
 
 
-        <h2>Recent Files</h2>
-        <div class="actions">
+<div class="card">
+<h3>Storage Used</h3>
+<h2>35 MB</h2>
+</div>
 
-        <button id="uploadBtn">Upload File</button>
+
+<div class="card">
+<h3>Cloud Status</h3>
+<h2>Active</h2>
+</div>
+
+
+</div>
+
+
+
+<h2>Recent Files</h2>
+
+
+<button id="uploadBtn">
+Upload File
+</button>
 
 <input type="file" id="fileInput" hidden>
 
+
+
+<table id="fileTable">
+
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Type</th>
+<th>Action</th>
+</tr>
+
+
+<tr>
+<td>Azure_Notes.pdf</td>
+<td>20 MB</td>
+<td>PDF</td>
+<td><button onclick="deleteFile(this)">Delete</button></td>
+</tr>
+
+
+<tr>
+<td>Internship_Report.pdf</td>
+<td>2 MB</td>
+<td>PDF</td>
+<td><button onclick="deleteFile(this)">Delete</button></td>
+</tr>
+
+
+<tr>
+<td>BlobNest_Project.pptx</td>
+<td>8 MB</td>
+<td>PPTX</td>
+<td><button onclick="deleteFile(this)">Delete</button></td>
+</tr>
+
+
+<tr>
+<td>Cloud_Basics.docx</td>
+<td>5 MB</td>
+<td>DOCX</td>
+<td><button onclick="deleteFile(this)">Delete</button></td>
+</tr>
+
+
+</table>
+
+
 </div>
-        <table id="fileTable">
-
-            <tr>
-                <th>Name</th>
-                <th>Size</th>
-                <th>Type</th>
-                <th>Action</th>
-            </tr>
-
-            <tr>
-                <td>Internship_Report.pdf</td>
-                <td>2 MB</td>
-                <td>PDF</td>
-            </tr>
-
-            <tr>
-                <td>Azure_Notes.pdf</td>
-                <td>20 MB</td>
-                <td>PDF</td>
-            </tr>
-
-            <tr>
-                <td>BlobNest_Presentation.pptx</td>
-                <td>8 MB</td>
-                <td>PPT</td>
-            </tr>
-
-            <tr>
-                <td>Project_Document.docx</td>
-                <td>5 MB</td>
-                <td>DOCX</td>
-            </tr>
-
-        </table>
-
-    </div>
 
 </div>
+
 
 <script src="script.js"></script>
 
